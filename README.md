@@ -1,3 +1,14 @@
+"""
+
+~ .oooooo..o  o8o            o8o                          oooooooooo.  oooo       ~
+~d8P'    `Y8  `"'            `"'                          `888'   `Y8b `888       ~
+~Y88bo.      oooo  oooo d8b oooo  oooo  oooo   .oooo.o     888     888  888  oooo ~
+~ `"Y8888o.  `888  `888""8P `888  `888  `888  d88(  "8     888oooo888'  888 .8P'  ~
+~     `"Y88b  888   888      888   888   888  `"Y88b.      888    `88b  888888.   ~
+~oo     .d8P  888   888      888   888   888  o.  )88b     888    .88P  888 `88b. ~
+~8""88888P'  o888o d888b    o888o  `V88V"V8P' 8""888P'    o888bood8P'  o888o o888o~
+"""
+
 # Challenge-Telecom-X_2
 Modelo predictivo capaz de prever qué clientes tengan mayor probabilidad de cancelar sus servicios.
 
