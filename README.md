@@ -73,7 +73,7 @@ Las variables más influyentes incluyen MonthlyCharges, Tenure, y servicios como
 
 Clona el repositorio:
 
-git clone https://github.com/SiriusBk/telecom-churn-analysis.git
+git clone https://github.com/SiriusBK1/Challenge-Telecom-X_2
 cd telecom-churn-analysis
 
 Instala dependencias:
