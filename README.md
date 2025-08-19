@@ -1,4 +1,5 @@
-"""
+---
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~ .oooooo..o  o8o            o8o                          oooooooooo.  oooo       ~
 ~d8P'    `Y8  `"'            `"'                          `888'   `Y8b `888       ~
@@ -8,90 +9,83 @@
 ~oo     .d8P  888   888      888   888   888  o.  )88b     888    .88P  888 `88b. ~
 ~8""88888P'  o888o d888b    o888o  `V88V"V8P' 8""888P'    o888bood8P'  o888o o888o~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"""
 
-# Challenge-Telecom-X_2
-Modelo predictivo capaz de prever qué clientes tengan mayor probabilidad de cancelar sus servicios.
+Challenge-Telecom-X_2
+Modelo predictivo capaz de prever qué clientes tienen mayor probabilidad de cancelar sus servicios.
 
+Proyecto de análisis de cancelación de clientes (churn) en una empresa de telecomunicaciones, utilizando técnicas de balanceo, escalado y modelos predictivos como Regresión Logística y Random Forest.
+Desarrollado por Adrián | Branding: SiriusBk
 
-> Proyecto de análisis de cancelación de clientes (churn) en una empresa de telecomunicaciones, utilizando técnicas de balanceo, escalado, y modelos predictivos como regresión logística y Random Forest.  
-> Desarrollado por **Adrian** | Branding: **SiriusBk**
-
----
-
-## Objetivo
+🎯 Objetivo
 
 Identificar patrones y variables clave que explican la cancelación de clientes en Telecom X, y construir modelos predictivos que permitan anticipar el churn con alta precisión. El análisis busca generar insights accionables para mejorar la retención de clientes.
 
----
+🔎 Metodología
 
-## Metodología
+1.- Carga y limpieza de datos
 
-1. **Carga y limpieza de datos**
-   - Renombrado de columnas
-   - Conversión de tipos
-   - One-hot encoding para variables categóricas
+* Renombrado de columnas
+* Conversión de tipos
+* One-hot encoding para variables categóricas
 
-2. **Preprocesamiento**
-   - Separación de variables (`X`, `y`)
-   - División en entrenamiento y prueba (`train_test_split`)
-   - Balanceo de clases con **SMOTE**
-   - Escalado de variables numéricas con `StandardScaler`
+2.- Preprocesamiento
 
-3. **Modelado**
-   - Regresión Logística con `GridSearchCV` para optimización de hiperparámetros
-   - Random Forest para análisis de importancia de variables
+* Separación de variables (X, y)
+* División en entrenamiento y prueba (train_test_split)
+* Balanceo de clases con SMOTE
+* Escalado de variables numéricas con StandardScaler
 
-4. **Evaluación**
-   - Métricas: Accuracy, Precision, Recall, F1-score, ROC-AUC
-   - Visualizaciones: Matriz de confusión, curva ROC, curva Precision-Recall
+3.- Modelado
 
-5. **Interpretación**
-   - Coeficientes de regresión logística
-   - Importancia de características en Random Forest
+* Regresión Logística con GridSearchCV para optimización de hiperparámetros
+* Random Forest para análisis de importancia de variables
 
----
+4.- Evaluación
 
-## 📈 Resultados
+* Métricas: Accuracy, Precision, Recall, F1-score, ROC-AUC
+* Visualizaciones: Matriz de confusión, curva ROC, curva Precision-Recall, curva de ganancias
 
-| Modelo                        | Accuracy | F1-score | ROC-AUC |
-|------------------------------|----------|----------|---------|
-| Regresión Logística (Optim.) | 0.XX     | 0.XX     | 0.XX    |
-| Random Forest                | 0.XX     | 0.XX     | 0.XX    |
+5.- Interpretación
 
-> Las variables más influyentes incluyen `MonthlyCharges`, `Tenure`, y ciertos servicios contratados como `OnlineSecurity` y `TechSupport`.
+* Coeficientes de regresión logística
+* Importancia de características en Random Forest
 
----
+📈 Resultados
+Modelo	Accuracy	F1-score	ROC-AUC
+Regresión Logística (Optim.)	0.XX	0.XX	0.XX
+Random Forest	0.XX	0.XX	0.XX
 
-## Recomendaciones
+Las variables más influyentes incluyen MonthlyCharges, Tenure, y servicios como OnlineSecurity y TechSupport.
 
-- **Segmentar clientes con alto riesgo de churn** según las variables más influyentes.
-- **Ofrecer incentivos personalizados** para clientes con baja permanencia (`Tenure`) y altos cargos mensuales.
-- **Mejorar servicios clave** como soporte técnico y seguridad online, que muestran fuerte correlación con retención.
+💡 Recomendaciones
 
----
+* Segmentar clientes con alto riesgo de churn según las variables más influyentes.
+* Ofrecer incentivos personalizados para clientes con baja permanencia (Tenure) y altos cargos mensuales.
+* Mejorar servicios clave como soporte técnico y seguridad online, que muestran fuerte correlación con retención.
 
-## Tecnologías utilizadas
+🛠️ Tecnologías utilizadas
 
-- Python (pandas, numpy, scikit-learn, imbalanced-learn)
-- Visualización: matplotlib, seaborn
-- Jupyter Notebook / Google Colab
+* Python (pandas, numpy, scikit-learn, imbalanced-learn)
+* Visualización: matplotlib, seaborn
+* Jupyter Notebook / Google Colab
 
----
+▶️ Cómo reproducir
 
-## Cómo reproducir
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/SiriusBk/telecom-churn-analysis.git
-   cd telecom-churn-analysis
-2. 	Instala dependencias:
-    pip install -r requirements.txt
+Clona el repositorio:
 
-3. 	Ejecuta el notebook:
-   jupyter notebook Telecom_X_2.ipynb
+git clone https://github.com/SiriusBk/telecom-churn-analysis.git
+cd telecom-churn-analysis
+
+Instala dependencias:
+
+pip install -r requirements.txt
+
+Ejecuta el notebook:
+
+jupyter notebook Telecom_X_2.ipynb
 
 
-Autor
+👤 Autor
 Adrián — Estudiante de Data Science
 🔗 GitHub: SiriusBk
 📬 Contacto: aacevedovergara@gmail.com
